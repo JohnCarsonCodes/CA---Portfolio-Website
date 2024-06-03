@@ -205,3 +205,60 @@ footer {
 #footer-nav-links a:hover {
     color: rgb(224, 224, 224);
 }
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    gap: 15px;
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px; 
+}
+
+#contact-form .btn {
+    height: 3rem;
+    width: 40rem;
+    border: none; 
+    background-color: black;
+    color: white;
+    border-radius: 8px; 
+    font-size: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; 
+}
+
+.input {
+    margin-top: 0.4rem;
+    height: 2rem; 
+    width: 40rem;
+}
+
+#contact-footer {
+    position: absolute;
+    bottom: 0;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: space-between;
+    align-items: inherit;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0
+}
+
+#contact-footer-nav {
+    margin-left: 150px; 
+}
