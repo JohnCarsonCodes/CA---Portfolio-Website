@@ -7,7 +7,7 @@ function changeH1To () {
         element = document.getElementById('hero-title-changed');
     }
 
-    element.style.color = 'rgb(51, 72, 129)';
+    element.style.color = 'rgb(90, 90, 90)';
     element.style.marginBottom = '10px';
 }
 
@@ -44,7 +44,23 @@ function changeH1TextFrom () {
     document.getElementById('hero-wrapper').class = '';
 }
 
+function openImage(image) {
+    console.log('we made it');
+    console.log(image);
+
+    let overlay = document.getElementById('full-page-container');
+    let srcImg = document.getElementById('full-page-image');
+    overlay.style.visibility = 'visible';
+    srcImg.src = image;
+}
+
+function closeImage() {
+    let overlay = document.getElementById('full-page-container');
+    overlay.style.visibility = 'hidden';
+}
+
 
 document.getElementById('hero-wrapper').addEventListener('mouseover', changeH1To);
 document.getElementById('hero-wrapper').addEventListener('mouseout', changeH1From);
 document.getElementById('hero-wrapper').addEventListener('click', changeH1Text);
+document.getElementById('full-page-container').addEventListener('click', closeImage);

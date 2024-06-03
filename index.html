@@ -9,11 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
+        <div id="full-page-container">
+            <div id="full-page-img-container">
+                <img src="" alt="" id="full-page-image">
+            </div> 
+        </div>
         <nav>
             <div id="main-nav">
                 <div id="nav-logo">
@@ -38,10 +44,53 @@
 
         <section>
             <div class="about-me">
-                <div id="main-page-about"></div>
-                <div id="main-page-profile"></div>
+                <div id="main-page-about">
+                    <h3>About Me</h3>
+                    <br>
+                    <p>My name is John Carson.
+                    <br><br>
+                    I am a sprouting Web Developer from Niagara Falls, Ontario, Canada. With an intitial interest in graphic design at a young age, I decided to pursue my interest in coding when realizing the limitless potential available at my finger tips. I am currently honing my skills using Codeacademy's Full Stack developr pathway. 
+                    <br><br>
+                    Prior to this journey, I've had experience using various platforms such as Shopify, Wordpress, Wix and Squarespace. This led for a need to understand the basic foundations of web development and programming languages before truly investing myself within the world of coding.
+                    </p>
+                </div>
+                <div id="main-page-profile">
+                    <img src="assets/124375749_10157513709470718_8212252054652878744_n.jpg" alt="">
+                </div>
             </div>
         </section>
+        <section id="portfolio">
+            <div id="portfolio-content">
+                <h3>Portfolio</h3>
+                <p>Check out some of my projects I've worked on!</p>
+                <div id="project-container">
+                    <div class="project">
+                        <a href="https://www.5-starvapor.com" target="_blank"><h4>5-Star Vapor</h4></a>
+                        <img src="assets/5star-page.png" name="assets/5star-page.png" alt="" onclick="openImage(name)"/>
+                        <p>A vape shop hosted through the Shopify platform. Responsible for design implementation and UI.</p>
+                    </div>
+                    <div class="project">
+                        <h4>Programmer's Bible</h4>
+                        <img src="assets/prog-bible.png" name="assets/prog-bible.png" alt="" onclick="openImage(name)"/>
+                        <p>A personal project to culimnate my knowledge of web development. As I learn, I add passages to each page in my own words to ensure a more engaging and interactive experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="copyright"><p>&copy; 2021 John Carson Codes. All Rights Reserved.</p></div>
+            <div id="footer-nav">
+                <div id="footer-nav-links">
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+
     </main>
 
 <script src="script.js"></script>
